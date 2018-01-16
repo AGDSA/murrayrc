@@ -17,17 +17,17 @@ $slicer-breakpoints: 0 480px 791px 960px 1120px 1350px 1800px;
 $slicer-breakpoint-names: 'mobile' 'tablet-p' 'tablet-l' 'desktop''desktop-mid' 'desktop-xl';
 $slicer-anti-overlap-corrections: 1px !default;
 
-/* ICAC Colors */
-$primary-color: #009444; 
-$primary-color-lighter: #009444;
+/* Murray RC Colors */
+$primary-color: #0000ff;//blue
+$primary-color-lighter: #0000ff;
 $secondary-color: #666666;
 $tertiary-color: #1D194C;
 $primary-gray: #e4e4e3;
 $primary-gray-text: #818285;
 $darker-gray-text: #6f6f6f;
 $light-bg-color: #F8F7F7;
-$primary-blue: #009444;
-$dark-blue: #009444;
+$primary-blue:  #0000ff;
+$dark-blue:  #0000ff;
 $another-grey:#eaeaea;
 
 /* Greys */
@@ -50,7 +50,7 @@ $link-color-hover: $action-color-hover;
 $text-color: #555;
 $heading-color: $primary-color-lighter;
 
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: Arial, sans-serif;
 $base-font-size: 13; // That's in pixels
 $base-line-height: 1.5;
 $heading-line-height: 1.3;

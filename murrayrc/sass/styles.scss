@@ -7,25 +7,27 @@
  */
 
 /* ---------- Import variables ---------- */
-@import 'base/variables';
+@import "base/variables";
 
 /* ---------- Import grid system ---------- */
-@import 'jeet/index';
+@import "jeet/index";
 
 /* ---------- Import base ---------- */
-@import 'base/mixins';
-@import 'base/breakpoint';
-@import 'base/breakpoint-slicer';
+@import "base/mixins";
+@import "base/breakpoint";
+@import "base/breakpoint-slicer";
+
 //@import 'base/breakpoint-slicer-debug';
-@import 'base/typography';
+@import "base/typography";
 
 /* ---------- Import reset of govcms styles ---------- */
-@import 'design/govcms_reset';
-/* ---------- Import design ---------- */
-@import 'design/design';
-@import 'design/layout';
+@import "design/govcms_reset";
 
-/* ---------- Components ---------- 
+/* ---------- Import design --------- */
+@import "design/design";
+@import "design/layout";
+
+/* ---------- Components ----------
 @import 'components/blockquote';
 @import 'components/blocks';
 @import 'components/breadcrumb';
@@ -41,4 +43,4 @@
 @import 'components/tables';
 @import 'components/tabs-primary';
 */
-@import 'components/buttons';
+@import "components/buttons";
