@@ -1,0 +1,360 @@
+/*
+
+ _________________  _____      _____      _____           _____          _____         _____          ____        _____    ____   ____  _____      _____
+/                 \|\    \    /    /| ___|\    \     ____|\    \     ___|\    \    ___|\    \    ____|\   \   ___|\    \  |    | |    ||\    \    /    /|
+\______     ______/| \    \  /    / ||    |\    \   /     /\    \   /    /\    \  |    |\    \  /    /\    \ |    |\    \ |    | |    || \    \  /    / |
+   \( /    /  )/   |  \____\/    /  /|    | |    | /     /  \    \ |    |  |____| |    | |    ||    |  |    ||    | |    ||    |_|    ||  \____\/    /  /
+    ' |   |   '     \ |    /    /  / |    |/____/||     |    |    ||    |    ____ |    |/____/ |    |__|    ||    |/____/||    .-.    | \ |    /    /  /
+      |   |          \|___/    /  /  |    ||    |||     |    |    ||    |   |    ||    |\    \ |    .--.    ||    ||    |||    | |    |  \|___/    /  /
+     /   //              /    /  /   |    ||____|/|\     \  /    /||    |   |_,  ||    | |    ||    |  |    ||    ||____|/|    | |    |      /    /  /
+    /___//              /____/  /    |____|       | \_____\/____/ ||\ ___\___/  /||____| |____||____|  |____||____|       |____| |____|     /____/  /
+   |`   |              |`    | /     |    |        \ |    ||    | /| |   /____ / ||    | |    ||    |  |    ||    |       |    | |    |    |`    | /
+   |____|              |_____|/      |____|         \|____||____|/  \|___|    | / |____| |____||____|  |____||____|       |____| |____|    |_____|/
+     \(                   )/           \(              \(    )/       \( |____|/    \(     )/    \(      )/    \(           \(     )/         )/
+      '                   '             '               '    '         '   )/        '     '      '      '      '            '     '          '
+	/* ICOMOON */
+	@font-face {
+	  font-family: 'icomoon';
+	  src:  url('../fonts/icomoon.eot?eo3vry');
+	  src:  url('../fonts/icomoon.eot?eo3vry#iefix') format('embedded-opentype'),
+	    url('../fonts/icomoon.ttf?eo3vry') format('truetype'),
+	    url('../fonts/icomoon.woff?eo3vry') format('woff'),
+	    url('../fonts/icomoon.svg?eo3vry#icomoon') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	@mixin font-icon($icon) {
+		/* use !important to prevent issues with browser extensions that change fonts */
+	  font-family: 'icomoon' !important;
+	  speak: none;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  text-transform: none;
+	  line-height: 1;
+
+	  /* Better Font Rendering =========== */
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+
+		$space: ' ';
+		/*==== the icon ====*/
+		 content: $space$icon !important;
+	}
+	$icon-link-external: '\e900';
+/*
+    //    / /
+   //___ / /  ___      ___      ___   / ( )   __      ___      ___
+  / ___   / //___) ) //   ) ) //   ) / / / //   ) ) //   ) ) ((   ) )
+ //    / / //       //   / / //   / / / / //   / / ((___/ /   \ \
+//    / / ((____   ((___( ( ((___/ / / / //   / /   //__   //   ) )
+*/
+
+h1, h2, h3, h4, h5, p, a, li, {
+	font-family: $base-font-family;
+}
+h1, h2, h3, h4, h5{
+	color: $primary-color;
+	font-weight: bold;
+}
+h1{
+    background-color:$light-bg-color;
+}
+h2{
+	@include font-size(30);
+	color: $primary-color-lighter;
+	margin-top: 50px;
+}
+h3{
+	@include font-size(24);
+	color: $darker-gray-text;
+	margin-top: 30px;
+}
+
+/*
+
+     ______    ____             ______        ______  _______        ______  _____   ______   _________________      ______
+ ___|\     \  |    |        ___|\     \      |      \/       \   ___|\     \|\    \ |\     \ /                 \ ___|\     \
+|     \     \ |    |       |     \     \    /          /\     \ |     \     \\\    \| \     \\______     ______/|    |\     \
+|     ,_____/||    |       |     ,_____/|  /     /\   / /\     ||     ,_____/|\|    \  \     |  \( /    /  )/   |    |/____/|
+|     \--'\_|/|    |  ____ |     \--'\_|/ /     /\ \_/ / /    /||     \--'\_|/ |     \  |    |   ' |   |   ' ___|    \|   | |
+|     /___/|  |    | |    ||     /___/|  |     |  \|_|/ /    / ||     /___/|   |      \ |    |     |   |    |    \    \___|/
+|     \____|\ |    | |    ||     \____|\ |     |       |    |  ||     \____|\  |    |\ \|    |    /   //    |    |\     \
+|____ '     /||____|/____/||____ '     /||\____\       |____|  /|____ '     /| |____||\_____/|   /___//     |\ ___\|_____|
+|    /_____/ ||    |     |||    /_____/ || |    |      |    | / |    /_____/ | |    |/ \|   ||  |`   |      | |    |     |
+|____|     | /|____|_____|/|____|     | / \|____|      |____|/  |____|     | / |____|   |___|/  |____|       \|____|_____|
+  \( |_____|/   \(    )/     \( |_____|/     \(          )/       \( |_____|/    \(       )/      \(            \(    )/
+   '    )/       '    '       '    )/         '          '         '    )/        '       '        '             '    '
+        '                          '                                    '
+*/
+p{
+	@include font-size(16);
+}
+#content{
+	p{
+		line-height: 24px;
+	}
+}
+a{
+	color: $tertiary-color;
+	&:hover{
+		color: $secondary-color;
+	}
+  &:visited{
+    color: $tertiary-color;
+  }
+}
+a.external{
+	&:after{
+		// content:"";
+		// display: inline-block;
+		// width: 15px;
+		// height: 15px;
+		// background: no-repeat center url("../images/external-link-symbol.svg");
+		// background-size: contain;
+		@include font-size(14);
+		@include font-icon($icon-link-external);
+	}
+}
+hr{
+	border: 2px solid $primary-color-lighter;
+	margin: 40px 0;
+}
+blockquote{
+	color: $primary-color-lighter;
+	font-weight: bold;
+	background-color: $light-bg-color;
+	text-align: center;
+	font-size: 1.4em;
+	padding: 45px;
+	padding-top: 100px;
+	margin: 0;
+	position: relative;
+	line-height: 30px;
+	margin-top: 40px;
+    margin-bottom: 40px;
+	&:before{
+		content:"";
+		display: block;
+		width: 60px;
+		height: 60px;
+		background: no-repeat center url("../images/quote.svg");
+		position: absolute;
+		left: 50%;
+		top: 20px;
+		transform: translateX(-50%);
+	}
+	p{
+		margin: 0px;
+	}
+}
+div.important{
+	color: #ffffff;
+	background-color: $primary-color-lighter;
+	padding: 40px;
+	font-size: 1.3em;
+}
+table{
+	max-width: 100%;
+}
+table.small-only{
+	display: table;
+	margin: auto;
+	tr{
+		border: 1px solid #000;
+		td{
+			text-align: center;
+			border: 1px solid #000;
+		}
+	}
+}
+table.large-only{
+	display: none;
+}
+@include from('desktop-mid'){
+	table.small-only{
+		display: none;
+	}
+	table.large-only{
+		display: table;
+	}
+}
+
+.field-label{
+	font-size: 1.68em;
+    line-height: 1.16667em;
+    margin-top: 0.41667em;
+    margin-bottom: 0.41667em;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+span.file{
+	img, a{
+		display: inline-block;
+	}
+}
+input {
+    max-width: 100%;
+}
+img{
+	display: inline-block;
+}
+#content{
+	ul{
+		margin-top: 30px;
+		margin-left: 30px;
+		li{
+			list-style-type: disc;
+			margin-bottom: 5px;
+		}
+	}
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+/*
+
+      _____         _____         _____           _____         _____        _____    ____         _____  _____   ______            ______
+  ___|\    \    ___|\    \    ___|\    \     ____|\    \    ___|\    \   ___|\    \  |    |   ____|\    \|\    \ |\     \       ___|\     \
+ /    /\    \  /    /\    \  /    /\    \   /     /\    \  |    |\    \ |    |\    \ |    |  /     /\    \\\    \| \     \     |    |\     \
+|    |  |    ||    |  |    ||    |  |    | /     /  \    \ |    | |    ||    | |    ||    | /     /  \    \\|    \  \     |    |    |/____/|
+|    |__|    ||    |  |____||    |  |____||     |    |    ||    |/____/ |    | |    ||    ||     |    |    ||     \  |    | ___|    \|   | |
+|    .--.    ||    |   ____ |    |   ____ |     |    |    ||    |\    \ |    | |    ||    ||     |    |    ||      \ |    ||    \    \___|/
+|    |  |    ||    |  |    ||    |  |    ||\     \  /    /||    | |    ||    | |    ||    ||\     \  /    /||    |\ \|    ||    |\     \
+|____|  |____||\ ___\/    /||\ ___\/    /|| \_____\/____/ ||____| |____||____|/____/||____|| \_____\/____/ ||____||\_____/||\ ___\|_____|
+|    |  |    || |   /____/ || |   /____/ | \ |    ||    | /|    | |    ||    /    | ||    | \ |    ||    | /|    |/ \|   ||| |    |     |
+|____|  |____| \|___|    | / \|___|    | /  \|____||____|/ |____| |____||____|____|/ |____|  \|____||____|/ |____|   |___|/ \|____|_____|
+  \(      )/     \( |____|/    \( |____|/      \(    )/      \(     )/    \(    )/     \(       \(    )/      \(       )/      \(    )/
+   '      '       '   )/        '   )/          '    '        '     '      '    '       '        '    '        '       '        '    '
+                      '             '
+*/
+.cke_editable div.accordion-button{
+	border: dashed 1px red;
+}
+.cke_editable div.accordion-container{
+	border: dashed 1px blue;
+}
+.accordion-button{
+    padding: 25px 35px;
+    border-top: 1px solid $primary-gray;
+    border-bottom: 1px solid $primary-gray;
+    display: block;
+    position: relative;
+    color: $primary-gray-text;
+    font-size: 1.2em;
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+		height: auto;
+    &:before{
+	    content: "";
+	    font-size: 1em;
+	    display: inline-block;
+	    background-color: $secondary-color;
+	    width: 30px;
+	    height: 30px;
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	}
+	&:after{
+	    content: "";
+	    display: block;
+	    width: 8px;
+	    height: 8px;
+	    border-right: 2px solid #ffffff;
+	    border-bottom: 2px solid #ffffff;
+	    position: absolute;
+	    bottom: 10px;
+	    right: 10px;
+	    transform: rotate(45deg);
+	    transition: transform 0.3s ease;
+	}
+	&.open{
+		&:after{
+				    transform: rotate(-135deg);
+		}
+	}
+}
+div.accordion-container{
+	padding: 25px 35px;
+    border-top: 1px solid $primary-gray;
+    border-bottom: 1px solid $primary-gray;
+}
+
+/*
+
+ _________________       ____         _____    ____             ______                 _____          _____              _____           _____  _____   ______   _________________      ______  _____   ______   _________________      ______
+/                 \ ____|\   \   ___|\     \  |    |        ___|\     \           ____|\    \    ____|\    \         ___|\    \     ____|\    \|\    \ |\     \ /                 \ ___|\     \|\    \ |\     \ /                 \ ___|\     \
+\______     ______//    /\    \ |    |\     \ |    |       |     \     \         /     /\    \  |    | \    \       /    /\    \   /     /\    \\\    \| \     \\______     ______/|     \     \\\    \| \     \\______     ______/|    |\     \
+   \( /    /  )/  |    |  |    ||    | |     ||    |       |     ,_____/|       /     /  \    \ |    |______/      |    |  |    | /     /  \    \\|    \  \     |  \( /    /  )/   |     ,_____/|\|    \  \     |  \( /    /  )/   |    |/____/|
+    ' |   |   '   |    |__|    ||    | /_ _ / |    |  ____ |     \--'\_|/      |     |    |    ||    |----'\       |    |  |____||     |    |    ||     \  |    |   ' |   |   '    |     \--'\_|/ |     \  |    |   ' |   |   ' ___|    \|   | |
+      |   |       |    .--.    ||    |\    \  |    | |    ||     /___/|        |     |    |    ||    |_____/       |    |   ____ |     |    |    ||      \ |    |     |   |        |     /___/|   |      \ |    |     |   |    |    \    \___|/
+     /   //       |    |  |    ||    | |    | |    | |    ||     \____|\       |\     \  /    /||    |             |    |  |    ||\     \  /    /||    |\ \|    |    /   //        |     \____|\  |    |\ \|    |    /   //    |    |\     \
+    /___//        |____|  |____||____|/____/| |____|/____/||____ '     /|      | \_____\/____/ ||____|             |\ ___\/    /|| \_____\/____/ ||____||\_____/|   /___//         |____ '     /| |____||\_____/|   /___//     |\ ___\|_____|
+   |`   |         |    |  |    ||    /     || |    |     |||    /_____/ |       \ |    ||    | /|    |             | |   /____/ | \ |    ||    | /|    |/ \|   ||  |`   |          |    /_____/ | |    |/ \|   ||  |`   |      | |    |     |
+   |____|         |____|  |____||____|_____|/ |____|_____|/|____|     | /        \|____||____|/ |____|              \|___|    | /  \|____||____|/ |____|   |___|/  |____|          |____|     | / |____|   |___|/  |____|       \|____|_____|
+     \(             \(      )/    \(    )/      \(    )/     \( |_____|/            \(    )/      )/                  \( |____|/      \(    )/      \(       )/      \(              \( |_____|/    \(       )/      \(            \(    )/
+      '              '      '      '    '        '    '       '    )/                '    '       '                    '   )/          '    '        '       '        '               '    )/        '       '        '             '    '
+                                                                   '                                                       '                                                               '
+*/
+.toc-filter{
+	padding: 10px 0px;
+	border-bottom: 4px solid $primary-color-lighter;
+	@include title-bar($secondary-color, before, 0);
+	&:before{
+		left: 0;
+		transform: none;
+	}
+	.item-list{
+		ul{
+			margin-left: 0px;
+		}
+	}
+	.toc-filter-content{
+		padding: 0px;
+		background-color: #ffffff;
+		border: none;
+		h3{
+			color: $primary-color-lighter;
+			@include font-size(24);
+			font-weight: normal;
+		}
+		ul{
+			margin-left: 0px;
+			li{
+				list-style-type: none;
+				a{
+					 color: $tertiary-color;
+					font-weight: bold;
+					@include font-size(14);
+					&:hover{
+						color: $secondary-color;
+					}
+				}
+			}
+		}
+	}
+}
+#main #content .toc-filter .toc-filter-content ul li {
+    list-style-type: none;
+}
+
+.toc-bookmark{
+	display: block;
+	padding-top: 200px;
+    margin-top: -200px;
+}
+
+
+.media-element-container{
+	display: inline;
+	.file, h2, div, a{
+		display: inline;
+	}
+	.file img{
+		display: inline;
+	}
+}
