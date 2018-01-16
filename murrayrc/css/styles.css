@@ -2198,10 +2198,6 @@ section.region-sidebar-second div.block .block__content {
   padding: 0;
 }
 
-body.not-front #page #main aside.sidebars a.active {
-  color: #666666;
-}
-
 #block-menu-block-1 .block__content,
 #block-menu-menu-footer-menu .block__content {
   background-color: #F8F7F7;
@@ -2301,7 +2297,6 @@ body.not-front #page #main aside.sidebars a.active {
 #block-menu-block-1 .block__content > ul.menu > li.active > ul.menu > li > a,
 #block-menu-menu-footer-menu .menu-block-1 > ul.menu > li.active > ul.menu > li > a,
 #block-menu-menu-footer-menu .block__content > ul.menu > li.active > ul.menu > li > a {
-  color: #0000ff;
   font-weight: bold;
   position: relative;
 }

@@ -1325,7 +1325,7 @@
         //Sidebar menu
         body.not-front #page #main aside.sidebars {
             a.active {
-                color: $secondary-color;
+                //color: $secondary-color;
             }
         }
 
@@ -1388,7 +1388,7 @@
                                 }
                                 & > a {
                                     // text-transform: uppercase;
-                                    color: $primary-color-lighter;
+                                    // color: $primary-color-lighter;
                                     font-weight: bold;
                                     position: relative;
                                 }
