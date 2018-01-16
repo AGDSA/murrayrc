@@ -157,7 +157,7 @@ body.not-front.node-type-project{
             //padding-right: #{$gutter-content}%;
             //padding-right:  calc((#{$gutter-content}%) * 2);
             /*
-            // Virtual centering in grid size 
+            // Virtual centering in grid size
             width: calc(74.25% - (100% - #{$container-width} ) / 2  );
             padding-right: calc((100% - #{$container-width} ) / 2  );
             & > * {
@@ -345,7 +345,9 @@ body.not-front.node-type-project{
         }
     }
     .pane-homepage-banner {
-        margin-bottom: 55px;
+      @include from(tablet-p){
+          margin-bottom: 55px;
+      }
     }
 }
 
@@ -1012,8 +1014,8 @@ pages with constrained content
             position: relative;
             margin-bottom: 50px;
             @include from(tablet-l){
-                margin-top: 60px;                
-            } 
+                margin-top: 60px;
+            }
             .form-item-keys-2 {
                 width: 100%;
                 margin: 0;
@@ -1250,7 +1252,7 @@ pages with constrained content
     margin-bottom: 40px;
 }
 
-//Special layout for tableau pages 
+//Special layout for tableau pages
 .page-node-108,
 .page-node-83,
 .page-node-80,
@@ -1264,7 +1266,7 @@ pages with constrained content
 .page-node-471,
 .page-node-476,
 .page-node-481,
-.node-type-tableau-dashboard{ 
+.node-type-tableau-dashboard{
     #page #main{
         #content{
             max-width: 960px;
@@ -1340,10 +1342,10 @@ div.header-secondary-menu{
                 padding-left: 20px;
                 a{
                     color: $darker-gray-text;
-                    text-decoration: none;    
+                    text-decoration: none;
                     @include  font-size(14);
                     &:hover{
-                        color: $primary-blue;   
+                        color: $primary-blue;
                     }
                 }
             }
@@ -1397,7 +1399,7 @@ body.cke_editable {
     }
     .col-two-thirds {
         @include column(2/3, $gutter: 3);
-    }   
+    }
     .col-one-quarter {
         @include column(1/4, $gutter: 3);
     }

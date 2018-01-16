@@ -3627,7 +3627,7 @@ body.not-front.node-type-project aside.sidebars section.region-sidebar-first {
   body.not-front.node-type-page #content,
   body.not-front.node-type-project #content {
     /*
-            // Virtual centering in grid size 
+            // Virtual centering in grid size
             width: calc(74.25% - (100% - 1120px ) / 2  );
             padding-right: calc((100% - 1120px ) / 2  );
             & > * {
@@ -3796,8 +3796,10 @@ body.not-front.node-type-project aside.sidebars section.region-sidebar-first {
   }
 }
 
-.front .pane-homepage-banner {
-  margin-bottom: 55px;
+@media (min-width: 481px) {
+  .front .pane-homepage-banner {
+    margin-bottom: 55px;
+  }
 }
 
 .view-homepage-banner .field-content {
