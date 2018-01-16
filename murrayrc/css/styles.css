@@ -3540,12 +3540,12 @@ body.not-front #content {
 
 body.node-type-news-article #main,
 body.node-type-news-article .breadcrumb,
-body.node-type-landing-page #main,
-body.node-type-landing-page .breadcrumb,
 body.page-search #main,
 body.page-search .breadcrumb,
 body.node-type-webform #main,
-body.node-type-webform .breadcrumb {
+body.node-type-webform .breadcrumb,
+body.node-type-standard-page #main,
+body.node-type-standard-page .breadcrumb {
   max-width: 830px;
   margin: auto;
 }

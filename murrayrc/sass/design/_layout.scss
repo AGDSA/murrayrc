@@ -103,9 +103,9 @@ body.not-front {
 }
 
 body.node-type-news-article,
-body.node-type-landing-page,
 body.page-search,
-body.node-type-webform {
+body.node-type-webform,
+body.node-type-standard-page {
     #main,
     .breadcrumb {
         max-width: 830px;
