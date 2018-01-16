@@ -12,8 +12,8 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = ICAC
-description = A Captovate theme for the ICAC Reviewer
+name        = Murray RC
+description = A Captovate theme for the Murray RC site
 
 
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen. test

@@ -122,7 +122,7 @@ function GOVCMS_STARTERKIT_preprocess_region(&$variables, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 
-function captogov_preprocess_block(&$variables, $hook) {
+function murrayrc_preprocess_block(&$variables, $hook) {
    // Add cleafix to all blocks
   $variables['classes_array'][] = 'clearfix';
   if($variables['block_html_id']=="block-facetapi-m0l5azttpkq0e1pwu9r002xpm0wet7wo"){
@@ -130,8 +130,8 @@ function captogov_preprocess_block(&$variables, $hook) {
   }
 }
 
-function captogov_preprocess_node(&$vars, $hook) {
-    //If landing page load the teasers of child pages 
+function murrayrc_preprocess_node(&$vars, $hook) {
+    //If landing page load the teasers of child pages
  if ($vars['type'] == 'landing_page') {
     $children = captogov_childtree($vars['nid']);
     if(gettype($children) == "string"){
@@ -144,9 +144,9 @@ function captogov_preprocess_node(&$vars, $hook) {
 }
 
 //Change search form placeholder
-function captogov_form_alter( &$form, &$form_state, $form_id )
+function murrayrc_form_alter( &$form, &$form_state, $form_id )
 {
-    if ($form_id == 'search_api_page_search_form_search') {    
+    if ($form_id == 'search_api_page_search_form_search') {
         $form['keys_2']['#attributes']['placeholder'] = t( 'Search our website' );
     }
 }
@@ -231,7 +231,7 @@ function check_menu_array($menu, $mlid){
 // }
 
 // Load plugin scripts and css only on homepage
-function captogov_preprocess_page(&$vars) {
+function murrayrc_preprocess_page(&$vars) {
   //adding twitter plugin and init js
   if(drupal_is_front_page()) {
     drupal_add_js(drupal_get_path('theme', 'captogov') . '/plugins/twitter-post-fetcher/js/twitterFetcher_min.js');
