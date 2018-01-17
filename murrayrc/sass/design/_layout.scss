@@ -18,7 +18,9 @@
 //Make room for admin bar when logged in
 body.navbar-administration {
     header {
+      @include from(tablet-p) {
         top: 39px;
+      }
     }
     &.navbar-tray-open.navbar-horizontal {
         header {

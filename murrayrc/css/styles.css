@@ -3462,8 +3462,10 @@ body.page-search #content .search-form #edit-submit {
    '     '      '    )/       '      '      '    '       '    )/       '     '
                      '                                        '
 */
-body.navbar-administration header {
-  top: 39px;
+@media (min-width: 481px) {
+  body.navbar-administration header {
+    top: 39px;
+  }
 }
 
 @media (min-width: 800px) {
