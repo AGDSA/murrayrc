@@ -1335,8 +1335,7 @@
             .block__content {
                 background-color: $light-bg-color;
             }
-            .menu-block-1,
-            .block__content {
+            .menu-block-1 {
                 a {
                     text-decoration: none;
                 }
@@ -1344,8 +1343,13 @@
                     & > li {
                         display: none;
                     }
+                    //active always highlighted
+                    li.active > a {
+                      color: $primary-color-lighter;
+                    }
+
                     //top level
-                    & > li.active {
+                    & > li.is-active-trail {
                         display: block;
                         padding-top: 20px;
                         & > a {
