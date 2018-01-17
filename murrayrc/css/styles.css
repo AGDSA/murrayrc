@@ -619,10 +619,6 @@ span.file img, span.file a {
   transition: 0.3s height ease-in-out;
 }
 
-.not-front header.header #block-superfish-1 {
-  margin-right: 70px;
-}
-
 .not-front header.header #block-superfish-1 #menu-914-1 {
   padding-left: 0px;
 }

@@ -415,11 +415,16 @@ Drupal.behaviors.my_custom_behavior = {
   //Force files to open in new window
   jQuery3('.file a').attr('target', '_blank');
 
-  //Change page margin top if sticky header height changes
+  //Set on page load
+  $page = $("div#page");
+  $header = $('header.header');
+  headerHeight = $header.height();
+  if (typeof headerHeight !== 'undefined') {
+    $page.css('margin-top',headerHeight+'px');
+  }
+  //Then change page margin top if sticky header height changes
   $( window ).resize(function() {
-    $header = $('header.header');
     headerHeight = $header.height();
-    $page = $("div#page");
     if (typeof headerHeight !== 'undefined') {
       $page.css('margin-top',headerHeight+'px');
     }
