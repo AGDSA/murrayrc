@@ -2007,7 +2007,8 @@ footer #block-menu-block-2 .menu-block-2 a:hover {
 
 .node-type-tableau-dashboard .field-name-field-summary,
 .node-type-page .field-name-field-summary,
-.node-type-project .field-name-field-summary {
+.node-type-project .field-name-field-summary,
+.node-type-standard-page .field-name-field-summary {
   margin: 30px 0;
   margin-top: 21px;
   font-size: 20px;
@@ -2016,20 +2017,23 @@ footer #block-menu-block-2 .menu-block-2 a:hover {
 
 .node-type-tableau-dashboard .field-name-field-summary p,
 .node-type-page .field-name-field-summary p,
-.node-type-project .field-name-field-summary p {
+.node-type-project .field-name-field-summary p,
+.node-type-standard-page .field-name-field-summary p {
   font-size: 20px;
   font-size: 1.25rem;
 }
 
 .node-type-tableau-dashboard #content .field-name-field-summary,
 .node-type-page #content .field-name-field-summary,
-.node-type-project #content .field-name-field-summary {
+.node-type-project #content .field-name-field-summary,
+.node-type-standard-page .field-name-field-summary {
   line-height: 31px;
 }
 
 .node-type-tableau-dashboard #content .field-name-field-summary p,
 .node-type-page #content .field-name-field-summary p,
-.node-type-project #content .field-name-field-summary p {
+.node-type-project #content .field-name-field-summary p,
+.node-type-standard-page .field-name-field-summary p {
   line-height: 31px;
 }
 

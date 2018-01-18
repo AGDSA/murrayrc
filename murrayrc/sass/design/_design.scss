@@ -1155,7 +1155,8 @@
         }
         .node-type-tableau-dashboard .field-name-field-summary,
         .node-type-page .field-name-field-summary,
-        .node-type-project .field-name-field-summary {
+        .node-type-project .field-name-field-summary,
+        .node-type-standard-page .field-name-field-summary {
             margin: 30px 0;
             margin-top: 21px;
             @include font-size(20);
@@ -1165,7 +1166,8 @@
         }
         .node-type-tableau-dashboard #content .field-name-field-summary,
         .node-type-page #content .field-name-field-summary,
-        .node-type-project #content .field-name-field-summary {
+        .node-type-project #content .field-name-field-summary,
+        .node-type-standard-page .field-name-field-summary {
             line-height: 31px;
             p {
                 line-height: 31px;
