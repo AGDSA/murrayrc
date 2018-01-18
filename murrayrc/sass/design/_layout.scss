@@ -122,9 +122,9 @@ body.not-front.node-type-project{
         margin: auto;
     }
     aside.sidebars {
-      @include to(tablet-l){
-        display: none;
-      }
+      // @include to(tablet-l){
+      //   display: none;
+      // }
         margin-bottom: 20px;
         section.region-sidebar-first {
             margin-bottom: 20px;

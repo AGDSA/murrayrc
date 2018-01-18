@@ -3510,13 +3510,6 @@ body.not-front.node-type-project aside.sidebars {
   margin-bottom: 20px;
 }
 
-@media (max-width: 960px) {
-  body.not-front.node-type-page aside.sidebars,
-  body.not-front.node-type-project aside.sidebars {
-    display: none;
-  }
-}
-
 body.not-front.node-type-page aside.sidebars section.region-sidebar-first,
 body.not-front.node-type-project aside.sidebars section.region-sidebar-first {
   margin-bottom: 20px;
