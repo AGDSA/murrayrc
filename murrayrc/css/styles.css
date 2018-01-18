@@ -2041,7 +2041,8 @@ footer #block-menu-block-2 .menu-block-2 a:hover {
 .node-type-news-article #block-views-banner-image-top-block .block__content,
 .node-type-project #block-views-banner-image-top-block .block__content,
 .node-type-webform #block-views-banner-image-top-block .block__content,
-.node-type-tableau-dashboard #block-views-banner-image-top-block .block__content {
+.node-type-tableau-dashboard #block-views-banner-image-top-block .block__content,
+.node-type-standard-page #block-views-banner-image-top-block .block__content {
   max-height: 150px;
   height: 150px;
 }
