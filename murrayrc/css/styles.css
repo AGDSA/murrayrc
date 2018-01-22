@@ -2205,6 +2205,7 @@ section.region-sidebar-second div.block .block__content {
 
 #block-menu-block-1 .menu-block-1 a {
   text-decoration: none;
+  color: #666666;
 }
 
 #block-menu-block-1 .menu-block-1 > ul.menu > li {
