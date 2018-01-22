@@ -3819,6 +3819,15 @@ body.not-front.node-type-project aside.sidebars section.region-sidebar-first {
   margin-top: 10px;
 }
 
+@media (max-width: 960px) {
+  .pane-block-26 {
+    margin-top: 0px;
+  }
+  .pane-block-26 .layout-row > h2 {
+    margin-top: 0px;
+  }
+}
+
 .pane-block-31,
 .pane-block-26 {
   margin: 2em auto;

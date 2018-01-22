@@ -415,6 +415,12 @@ body.not-front.node-type-project{
             margin-top: 10px;
         }
     }
+    @include to(tablet-l){
+      margin-top: 0px;
+      .layout-row > h2{
+        margin-top: 0px;
+      }
+    }
 }
 .pane-block-31,
 .pane-block-26{
