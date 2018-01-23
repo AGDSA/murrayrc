@@ -182,9 +182,9 @@
                         padding-bottom: 36px;
                         text-decoration: none;
                         &:hover {
-                            color: $tertiary-color;
+                            color: $primary-color;
                             &:after {
-                                border-color: $tertiary-color;
+                                border-color: $primary-color;
                             }
                         }
                         &:after {
@@ -1341,6 +1341,9 @@
                 a {
                     text-decoration: none;
                     color: $secondary-color;
+                    &:hover{
+                      color: $primary-color;
+                    }
                 }
                 & > ul.menu {
                     & > li {

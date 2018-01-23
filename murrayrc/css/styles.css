@@ -739,11 +739,11 @@ header.header #block-superfish-1 li.sf-depth-1 > a {
 }
 
 header.header #block-superfish-1 li.sf-depth-1 > a:hover {
-  color: #1D194C;
+  color: #00669a;
 }
 
 header.header #block-superfish-1 li.sf-depth-1 > a:hover:after {
-  border-color: #1D194C;
+  border-color: #00669a;
 }
 
 header.header #block-superfish-1 li.sf-depth-1 > a:after {
@@ -2206,6 +2206,10 @@ section.region-sidebar-second div.block .block__content {
 #block-menu-block-1 .menu-block-1 a {
   text-decoration: none;
   color: #666666;
+}
+
+#block-menu-block-1 .menu-block-1 a:hover {
+  color: #00669a;
 }
 
 #block-menu-block-1 .menu-block-1 > ul.menu > li {
