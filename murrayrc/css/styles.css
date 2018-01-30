@@ -243,6 +243,13 @@ img {
   margin-bottom: 5px;
 }
 
+#content ul li ul,
+#content ul li ol,
+#content ol li ul,
+#content ol li ol {
+  margin-top: 10px;
+}
+
 #content ul li {
   list-style-type: disc;
 }

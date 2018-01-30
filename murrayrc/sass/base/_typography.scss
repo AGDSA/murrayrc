@@ -209,6 +209,12 @@ img{
 		li{
 			margin-bottom: 5px;
 		}
+		li{
+			ul,
+			ol{
+				margin-top: 10px;
+			}
+		}
 	}
 }
 
