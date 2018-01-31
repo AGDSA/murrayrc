@@ -254,6 +254,14 @@ img {
   list-style-type: disc;
 }
 
+#content ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+#content ol.upper-alpha {
+  list-style-type: upper-alpha;
+}
+
 textarea:focus, input:focus {
   outline: none;
 }
