@@ -5,3 +5,7 @@
 body span.form-required{
   color: #5f5f5f;
 }
+
+.important a {
+    color: #ffffff;
+}
