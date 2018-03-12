@@ -75,6 +75,8 @@ scripts[] = plugins/slick/slick.min.js
 scripts[] = plugins/stacktable/stacktable.js
 scripts[] = js/jquery-noconflict.js
 scripts[] = js/jquery.matchHeight.js
+scripts[] = plugins/twitter-post-fetcher/js/twitterFetcher_min.js
+scripts[] = js/twitter-init.js
 scripts[] = js/script.js
 
 
