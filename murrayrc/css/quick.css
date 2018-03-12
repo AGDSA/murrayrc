@@ -11,4 +11,5 @@ body span.form-required{
 }
 
 .hide-this{
+  display: none !important;
 }
