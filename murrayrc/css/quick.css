@@ -46,3 +46,32 @@ body span.form-required{
     top: 75%;
   }
 }
+
+@media (min-width: 961px){
+#single-tweet-feed ul li .user{
+    width: 22%;
+  }
+}
+
+#single-tweet-feed ul li .tweet{
+  padding-top: 26px;
+}
+
+#single-tweet-feed{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#single-tweet-feed .user{
+  margin-left: 5px;
+}
+
+#single-tweet-feed ul .twitter-link{
+  display: none;
+}
+
+.front .pane-block-1{
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
