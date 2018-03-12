@@ -13,3 +13,36 @@ body span.form-required{
 .hide-this{
   display: none !important;
 }
+
+/* Twitter feed adjustments */
+.pane-block-31{
+  margin-bottom: 4em;
+}
+
+#single-tweet-feed{
+  margin-bottom: 5em;
+}
+
+#single-tweet-feed ul li .user span:nth-child(2n){
+  bottom: 3%;
+}
+
+#single-tweet-feed ul li .user span:nth-child(3n){
+  top: 96%;
+}
+
+#single-tweet-feed ul li .tweet{
+  font-size: 16px;
+}
+
+@media (max-width: 500px){
+  #single-tweet-feed ul li .user{
+    padding: 20px;
+  }
+  #single-tweet-feed ul li .user span:nth-child(2n){
+    bottom: 25%;
+  }
+  #single-tweet-feed ul li .user span:nth-child(3n){
+    top: 75%;
+  }
+}
