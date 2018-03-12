@@ -4,10 +4,10 @@
   	function homepageTwitterFeed(){
 	  	//Homepage single tweet feed
 	  	var configProfile = {
-		  "profile": {"screenName": 'SA_AGD'},
+		  "profile": {"screenName": 'mdbrcSA'},
 		  "domId": 'single-tweet-feed',
 		  "maxTweets": 1,
-		  "enableLinks": true, 
+		  "enableLinks": true,
 		  "showUser": true,
 		  "showTime": true,
 		  "showImages": true,
@@ -72,4 +72,3 @@
 
  });
 }(jQuery));
-
