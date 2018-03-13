@@ -83,3 +83,12 @@ body span.form-required{
 #single-tweet-feed ul li .timePosted{
   padding-top: 0px;
 }
+
+/* Hide second level nav for developing */
+.not-logged-in #superfish-1 li.sf-depth-1 ul{
+  display: none !important;
+}
+
+.nav-modal{
+  display: none !important;
+}
