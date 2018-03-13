@@ -96,3 +96,24 @@ body span.form-required{
 header.header #block-superfish-1 li.sf-depth-1 > a:after{
   content: none !important;
 }
+
+/* dropdown main menu styles */
+.sfHover > ul{
+  position: absolute !important;
+  top: 22px !important;
+  visibility: visible !important;
+  opacity: 100 !important;
+}
+.sfHover > ul li.sf-depth-2{
+  height: auto !important;
+}
+.sfHover > ul li.sf-depth-2 a{
+  font-size: 15px !important;
+  font-size: 0.9375rem !important;
+  min-height: auto !important;
+  padding: 15px !important;
+}
+header.header #block-superfish-1 li.sf-depth-1 > ul > li:before,
+header.header #block-superfish-1 li.sf-depth-1 > ul > li > a:after{
+  content: none !important;
+}
