@@ -107,6 +107,7 @@ body header.header #block-superfish-1 ul#superfish-1 .sfHover > ul{
   min-height: auto !important;
   padding: 15px !important;
 }
+header.header #block-superfish-1 li.sf-depth-1.active-trail > a:before,
 header.header #block-superfish-1 li.sf-depth-1 > ul > li:before,
 header.header #block-superfish-1 li.sf-depth-1 > ul > li > a:after{
   content: none !important;
