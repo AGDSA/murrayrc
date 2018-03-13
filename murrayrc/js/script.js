@@ -27,7 +27,7 @@ $(document).ready(function() {
   }
 
   /* ===== MEGAMENU ===== */
-  $('li.sf-depth-2', $sfMenu).matchHeight();
+  //$('li.sf-depth-2', $sfMenu).matchHeight();
 
   // DROPDOWN BACKGROUND -JUHANI
   // remove the next mouseenter and mouseleave to remove dropdown bg
