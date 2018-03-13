@@ -100,13 +100,14 @@ header.header #block-superfish-1 li.sf-depth-1 > a:after{
 /* dropdown main menu styles */
 body header.header #block-superfish-1 ul#superfish-1 .sfHover > ul{
   position: absolute !important;
-  top: 22px !important;
+  top: 50px !important;
   visibility: visible !important;
   opacity: 100 !important;
 }
 .sfHover > ul li.sf-depth-2{
   height: auto !important;
   margin-top: 0px !important;
+  float: none !important;
 }
 .sfHover > ul li.sf-depth-2 a{
   font-size: 15px !important;
