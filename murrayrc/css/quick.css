@@ -91,7 +91,7 @@ body span.form-required{
 /* dropdown main menu styles */
 body header.header #block-superfish-1 ul#superfish-1 .sfHover > ul{
   position: absolute !important;
-  top: 55px !important;
+  top: 58px !important;
   left: 17px !important;
   visibility: visible !important;
   opacity: 100 !important;
@@ -108,7 +108,7 @@ body header.header #block-superfish-1 ul#superfish-1 .sfHover > ul{
   padding: 15px !important;
 }
 
-header.header #block-superfish-1 li.sf-depth-1.active-trail > a:before,
+header.header #block-superfish-1 li.sf-depth-2.active-trail > a:before,
 header.header #block-superfish-1 li.sf-depth-1 > ul > li:before,
 header.header #block-superfish-1 li.sf-depth-1 > ul > li > a:after{
   content: none !important;
