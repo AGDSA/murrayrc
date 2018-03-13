@@ -92,3 +92,7 @@ body span.form-required{
 .nav-modal{
   display: none !important;
 }
+
+header.header #block-superfish-1 li.sf-depth-1 > a:after{
+  content: none !important;
+}
