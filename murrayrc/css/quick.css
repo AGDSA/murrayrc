@@ -54,7 +54,7 @@ body span.form-required{
 }
 
 #single-tweet-feed ul li .tweet{
-  padding-top: 26px;
+  padding-top: 16px;
 }
 
 #single-tweet-feed{
@@ -74,4 +74,8 @@ body span.form-required{
   width: 100%;
   max-width: 1120px;
   margin: 0 auto;
+}
+
+#single-tweet-feed ul li .timePosted{
+  padding-top: 0px;
 }
