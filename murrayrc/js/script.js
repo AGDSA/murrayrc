@@ -430,6 +430,10 @@ Drupal.behaviors.my_custom_behavior = {
     }
   });
 
+  // Nav dropdown prevent top level links with sub items from working
+  $('#block-superfish-1 a.menuparent.sf-depth-1').click(function(e) {
+    e.preventDefault();
+  });
 
 
 
