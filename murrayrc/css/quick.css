@@ -117,3 +117,31 @@ header.header #block-superfish-1 li.sf-depth-1 > ul > li > a:after{
 #block-superfish-1 a.menuparent.sf-depth-1{
   cursor: pointer;
 }
+
+/* Twitter quick fix */
+@media (min-width: 961px){
+  #single-tweet-feed ul {
+    height: 200px;
+  }
+  #single-tweet-feed ul:before{
+    height: 196px;
+  }
+  #single-tweet-feed ul li .user{
+    max-height: 200px;
+    overflow: visible;
+  }
+  #single-tweet-feed ul li .timePosted{
+    float: none;
+    clear: none;
+  }
+  #single-tweet-feed ul li .tweet{
+    max-height: none;
+  }
+  #single-tweet-feed ul li .user span:first-child{
+    display: block;
+    max-width: 115px;
+  }
+  #single-tweet-feed ul li .user span:nth-child(2n){
+    bottom: 50%;
+  }
+}
