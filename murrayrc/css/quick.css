@@ -80,10 +80,6 @@ body span.form-required{
   margin: 0 auto;
 }
 
-#single-tweet-feed ul li .timePosted{
-  padding-top: 0px;
-}
-
 .nav-modal{
   display: none !important;
 }
@@ -119,6 +115,10 @@ header.header #block-superfish-1 li.sf-depth-1 > ul > li > a:after{
 }
 
 /* Twitter quick fix */
+#single-tweet-feed ul li .tweet {
+    padding-top: 20px;
+}
+
 @media (min-width: 961px){
   #single-tweet-feed ul {
     height: 200px;
